@@ -1,0 +1,19 @@
+# Use only one time
+install.packages("jsonlite")
+library("jsonlite", lib.loc="~/R/win-library/3.1")
+ 
+elastichoney <- function(filename) {
+    # importing data file
+    data <- fromJSON(filename)
+ 
+    # slicing data for seperating the  dataframes and list within the dataframe
+    data1 <- data[,!(names(data) %in% c("location", "headers", "geoip"))]
+    col_header <- data$headers
+    col_geoip <- data$geoip[,!(names(data$geoip) %in% c("location"))]
+   
+    # joining all three dataframes and assigning in global variables
+    data3 <<- cbind(data1,col_header,col_geoip)
+    #  write.csv(x = data3, "logs.csv")
+}
+return(a <- data3)
+elastichoney("logs.json")
