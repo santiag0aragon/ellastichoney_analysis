@@ -1,8 +1,76 @@
-% + ISP & Attack Victim & Regulator/Authority
-%     ALE =SLE*ARO
-%     Flow Analysis
-%     Misuse detection systems
-%     Anomaly-Based Intrusion Detection Systems identify
+\documentclass[a4paper]{article}
 
-% + Zombie machine
-%     CVS Score
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\author{}
+
+\begin{document}
+	
+\section{What are the metrics that exist in practice?}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{"../../../Economics of security/1"}
+\caption{Botnet Resourse requirements and Metrics}
+\label{fig:1}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{"../../../Economics of security/2"}
+\caption{Infection Vectors}
+\label{fig:2}
+\end{figure}
+
+
+The following is a list of metrics used by honeypots to detect botnet activity:
+
+-Network Fingerprinting:
+With this methods,  you can create a metric that states which hosts communicates to which hosts. For example, you can track all the IP addresses , the honeypot communicates to	. This is interesting because using this method , you can differentiate between different types of botnets for example if  the honeypot is part of a traditional command and control botnet. The honeypots will only communicate to the controller and  in a peer to peer botnet , the honeypots will create multiple other members of the botnet.[4]
+
+-IRC related features:
+With this method, you can create metric that differentiates between a member of a member of a IR C type botnet and a non-infected member because these type of botnets  send and receive signature commands over IRC channels.[5]
+
+-Longitudinal tracking:
+With this method, you can create metric where you can visualise the number of attacks originating from a particular geographical location.[5]
+
+-DNS tracking:
+This method is almost the same as Longitudinal tracking, but instead of tracking the geographical location, this method tracks the domain names.[5]
+
+-Port  Scan tracking from IDS logs:
+With IDS logs, you can view how many times a host tries to communicate with the honeypot and deduce if a port scan is active and create a metric that state show many port scans each communicating host performs.[7]
+
+-Botnet resources tracking:
+In figure 1,you can see different resource aspects of botnet and each of these resources can be used to create metrics which differentiates between different types of botnets[4]
+
+
+-Botnet infection vectors:
+This method is almost the same as the botnet resources metrics but in this metrics, you differentiate between  infection vectors of different types of vectors. See figure 2 and an extra example might be phishing.[4]
+
+
+Signature tracking:
+In a few methods seen above, we have seen metrics that could differentiate between different types of botnets and if we use a signature of a specific botnet, for example the backdoor port of a trojan horse that it uses , we can create a metric that tracks the infection rate of that specific botnet.[6]
+
+-DNS sinkhole:
+If a honeypot gets infected by a traditional command and control botnet  and uses a DNS server to communicate with this honeypot ,one can try to change the DNS location of the botnet controller to DNS location of the honeypot. This results in all the other members of the botnet in the same DNS server communicating to the honeypot instead of the botnet controller which results in a precise mapping of all the members of the botnet in the DNS server.[7]
+
+
+
+1) Böhme, Rainer. "Security metrics and security investment models." Advances in Information and Computer Security. Springer Berlin Heidelberg, 2010. 10-24.
+
+2) http://jordan-wright.com/blog/2015/05/11/60-days-of-watching-hackers-attack-elasticsearch/
+
+3) Anderson, Ross, et al. "Measuring the cost of cybercrime." The economics of information security and privacy. Springer Berlin Heidelberg, 2013. 265-300.
+
+4) Grizzard, Julian B., et al. "Peer-to-peer botnets: Overview and case study."Proceedings of the first conference on First Workshop on Hot Topics in Understanding Botnets. 2007.
+
+5) Abu Rajab, Moheeb, et al. "A multifaceted approach to understanding the botnet phenomenon." Proceedings of the 6th ACM SIGCOMM conference on Internet measurement. ACM, 2006.
+
+6) Andreolini, Mauro, et al. "Honeyspam: Honeypots fighting spam at the source."Proceedings of the Steps to Reducing Unwanted Traffic on the Internet on Steps to Reducing Unwanted Traffic on the Internet Workshop. USENIX Association, 2005.
+
+7) Wang, Ping, et al. "Honeypot detection in advanced botnet attacks."International Journal of Information and Computer Security 4.1 (2010): 30-51.
+
+
+
+\end{document}
