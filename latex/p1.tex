@@ -1,15 +1,4 @@
-\documentclass[a4paper]{article}
-
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
-\author{}
-
-\begin{document}
-	
-\section{What security issue does the data speak to?}
+What security issue does the data speak to?
 
 Companies and people have more and more problems defending against cyber incidents. It is not possible to defend against all possible cyber attacks, so people have to make strategic decisions on where to invest in their security. Making strategic decisions about security requires us to have a clear understanding of these security issues and for this there is a great need for security metrics. [1]
 
@@ -24,12 +13,13 @@ One of the major security issues that the digital world is currently facing is "
 \end{quote}
 
 The authors of this paper think that the logs of Elastichoney tracks the activities of one or more botnets, because the following attack patterns can be found in the logs:
-
 The same operation steps are performed on multiple different files:
-1. Downloading the file using the command wget,
-2. Making the file location accessible by using the command chmod 777,
-3. Executing the file,
-4. Removing the file using the command rm.
+\begin{itemize}
+\item Downloading the file using the command wget,
+\item Making the file location accessible by using the command chmod 777,
+\item Executing the file,
+\item Removing the file using the command rm.
+\end{itemize}
 Operations on files were requested by multiple different sources.
 
 These attack patterns hints at distributed automated attacks, which is a clear indicator of botnet activity.
@@ -48,4 +38,4 @@ These attack patterns hints at distributed automated attacks, which is a clear i
 
 7) Wang, Ping, et al. "Honeypot detection in advanced botnet attacks."International Journal of Information and Computer Security 4.1 (2010): 30-51.
 
-\end{document}
+
