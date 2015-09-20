@@ -1,31 +1,23 @@
 
 Companies and people have more and more problems defending against cyber incidents. It is not possible to defend against all possible cyber attacks, so people have to make strategic decisions on where to invest in their security. Making strategic decisions about security requires us to have a clear understanding of these security issues and for this there is a great need for security metrics~\cite{BR2010}.
 
-To be able to make metrics, we need reliable data . One way getting reliable data about cyber threats is capturing cyber attacks with a honeypot. Honeypots are systems made vulnerable intentionally to attract attackers to get inside the system to track their activities~\cite{WP2010}.
-% in a formal text we never use "" but italics
-% souce of the vul
-% low level ?
-% ellastic seach honeypot
-% description of the data ?
+To be able to make metrics, we need reliable data. One way getting reliable data about cyber threats is capturing cyber attacks with a honeypot. Honeypots are systems made vulnerable intentionally to attract attackers to get inside the system to track their activities~\cite{WP2010}.
 
-This paper proposes meaningful metrics based on the logs from the honey pot called "Elastichoney". Elastichoney is a low-level honeypot which contains RCE Remote code execution vulnerability -CVE- 2015-1427, which allowed attackers to execute java based code in the search bar of the honeypot. The log files of this honeypot contains data collected over two months and tracked about 8k attempts to attack from over 300 unique IP addresses~\cite{BR2010}.
+This paper proposes meaningful metrics based on the logs from the honey pot called \texit{Elastichoney}. Elastichoney is a elasticsearch honeypot containing the RCE Remote code execution vulnerability -CVE- 2015-1427, which allowed attackers to execute java based code in the search bar of the honeypot~\cite{CVE}. The log files of this honeypot contains data collected over two months and tracked about 8k attempts to attack from over 300 unique IP addresses~\cite{BR2010}.
 
-% we do not cite like that
-One of the major security issues that the digital world is currently facing is "BOTNETS". In the paper "Measuring the cost of cybercrime" you can read that:
+One of the major security issues that the digital world is currently facing is BOTNETS. In the paper \textit{Measuring the cost of cybercrime} you can read that:
 
-\begin{quote}
-	"Botnets provide a versatile platform for a variety of criminal business models, including sending spam, committing click fraud, harvesting account credentials, launching denial-of-service attacks, installing scareware and phishing"~\cite{AR2013}.
-\end{quote}
-% do not contribute to write the vulnerability
-The authors of this paper think that the logs of Elastichoney tracks the activities of one or more botnets, because the following attack patterns can be found in the logs:
-The same operation steps are performed on multiple different files:
+\textit{Botnets provide a versatile platform for a variety of criminal business models, including sending spam, committing click fraud, harvesting account credentials, launching denial-of-service attacks, installing scareware and phishing}~\cite{AR2013}.
+
+The authors of this paper think that the logs of Elastichoney tracks the activities of one or more botnets, because the following two features can be found in the attack patterns in the logs:
+First, by using the code execution vulnerability, the same operation steps are performed on multiple different files:
 \begin{itemize}
 \item Downloading the file using the command wget,
 \item Making the file location accessible by using the command chmod 777,
 \item Executing the file,
 \item Removing the file using the command rm.
 \end{itemize}
-Operations on files were requested by multiple different sources.
+Second, the operations on files were requested by multiple different sources.
 
-These attack patterns hints at distributed automated attacks, which is a clear indicator of botnet activity.
-% you never answered the question
+These two features hints at distributed automated attacks, which is a clear indicator of botnet activity.
+
