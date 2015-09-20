@@ -501,28 +501,6 @@ IEEEtran, journal, \LaTeX, paper, template.
 
 \section{What are the metrics that exist in practice?}
 \input{p3}
-Companies and people have more and more problems defending against cyber incidents. It is not possible to defend against all possible cyber attacks, so people have to make strategic decisions on where to invest in their security. Making strategic decisions about security requires us to have a clear understanding of these security issues and for this there is a great need for security metrics. [1]
-
-To be able to make metrics, we need reliable data . One way getting reliable data about cyber threats is capturing cyber attacks with a honeypot. Honeypots are systems made vulnerable intentionally to attract attackers to get inside the system to track their activities.[ 7]
-
-This paper proposes meaningful metrics based on the logs from the honey pot called "Elastichoney". Elastichoney is a low-level honeypot which contains RCE Remote code execution vulnerability -CVE- 2015-1427, which allowed attackers to execute java based code in the search bar of the honeypot. The log files of this honeypot contains data collected over two months and tracked about 8k attempts to attack from over 300 unique IP addresses. [2]
-
-One of the major security issues that the digital world is currently facing is "BOTNETS". In the paper "Measuring the cost of cybercrime" you can read that:
-
-\begin{quote}
-	"Botnets provide a versatile platform for a variety of criminal business models, including sending spam, committing click fraud, harvesting account credentials, launching denial-of-service attacks, installing scareware and phishing". [3]
-\end{quote}
-
-The authors of this paper think that the logs of Elastichoney tracks the activities of one or more botnets, because the following attack patterns can be found in the logs:
-
-The same operation steps are performed on multiple different files:
-1. Downloading the file using the command wget,
-2. Making the file location accessible by using the command chmod 777,
-3. Executing the file,
-4. Removing the file using the command rm.
-Operations on files were requested by multiple different sources.
-
-These attack patterns hints at distributed automated attacks, which is a clear indicator of botnet activity.
 
 \section{A definition of the metrics you can design from the dataset}
 \input{p4}
@@ -682,13 +660,13 @@ The authors would like to thank...
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
+% \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+% \bibitem{IEEEhowto:kopka}
+% H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
-\end{thebibliography}
+% \end{thebibliography}
 
 % biography section
 %
@@ -701,9 +679,12 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{picture}}]{John Doe}
-\blindtext
-\end{IEEEbiography}
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,ref}
+
+% \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{picture}}]{John Doe}
+% \blindtext
+% \end{IEEEbiography}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate
