@@ -66,7 +66,7 @@
 \documentclass[journal]{IEEEtran}
 \usepackage{blindtext}
 \usepackage{graphicx}
-
+\usepackage[utf8]{inputenc}
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
 
@@ -399,14 +399,37 @@
 % was not built to handle multiple paragraphs
 %
 
-\author{Santiago~Aragón,~\IEEEmembership{Member,~IEEE,}
-        John~Doe,~\IEEEmembership{Fellow,~OSA,}
-        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
-\thanks{M. Shell is with the Department
-of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
-GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
-\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-\thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
+
+\author{
+ Santiago Aragón$^{\ast}$, %
+ Daniel Meinsma$^{\ast}$, %
+ Pallavii Jagannatha$^{\ast}$
+ Owais Ahmed$^{\ast}$,\\
+ $\ast$ University of Twente, Nederlands\\
+  % {\small{\texttt{santiago.aragon@itam.mx, tania.villa@ift.org.mx, kuhlmann@itam.mx}}}
+}
+% \author{\IEEEauthorblockN{Santiago Aragón,\\ Daniel Meinsma}
+% \IEEEauthorblockA{University of Twente\\%Mexican Autonomous Institute of Technology\\
+% % Mexico City, Mexico\\
+% % santiago.aragon@itam.mx, kuhlmann@itam.mx
+% }
+% \and
+% \IEEEauthorblockN{Pallavii Jagannatha,\\ Owais Ahmed\\}
+% \IEEEauthorblockA{University of Twente}
+% }
+% \and
+% \IEEEauthorblockN{Tania Villa}
+% \IEEEauthorblockA{Instituto Federal de Telecomunicaciones\\%Federal Institute of Telecommunications\\
+% Mexico City, Mexico\\
+% tania.villa@ift.org.mx}
+% \author{Santiago~Aragón,~\IEEEmembership{Member,~IEEE,}
+%         Owais Ahmed,~\IEEEmembership{Fellow,~OSA,}
+%         and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
+% \thanks{M. Shell is with the Department
+% of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+% GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
+% \thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
+% \thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
 
 % note the % following the last \IEEEmembership and also \thanks -
 % these prevent an unwanted space from occurring between the last author name
@@ -429,7 +452,7 @@ GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this %
 
 
 % The paper headers
-\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+\markboth{Economics of Security}%
 {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
@@ -462,7 +485,7 @@ GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this %
 
 \begin{abstract}
 %\boldmath
-\blindtext[1]
+% \blindtext[1]
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -473,7 +496,7 @@ GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this %
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-IEEEtran, journal, \LaTeX, paper, template.
+% IEEEtran, journal, \LaTeX, paper, template.
 \end{IEEEkeywords}
 
 
@@ -619,15 +642,15 @@ IEEEtran, journal, \LaTeX, paper, template.
 %
 
 
-\appendices
-\section{Proof of the First Zonklar Equation}
-Some text for the appendix.
+%\appendices
+%\section{Proof of the First Zonklar Equation}
+%Some text for the appendix.
 
 % use section* for acknowledgement
-\section*{Acknowledgment}
+%\section*{Acknowledgment}
 
 
-The authors would like to thank...
+%The authors would like to thank...
 
 
 % Can use something like this to put references on a page

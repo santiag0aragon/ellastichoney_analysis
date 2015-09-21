@@ -1,24 +1,10 @@
-Our main focus for the analytics will include identifying clear statistics on events from whom, from where and what attacks recorded in the JSON logs available. The following definitions will help us critically analyze the nature, criticality, severity and resources needed to mitigate the impact of this vulnerability.
-
-•	The rank order or the concentration from where the majority of attacks are coming from, considering the geographical locations / regions to be identified such as continent, country and city name. % what is the rank order?
-•	The number of events that took place during the detection phase and the time duration period / timestamp of the attack, this will demonstrate the extent of effort put in to gain access to critical systems. % we dont have this info
-•	The host systems that are under attack targeting specific ports.% that is not a metric
-•	The types of content used in the vulnerability. % Do you mean payload ? What is a type of payload ?
-•	The different methods and types of various user agents used to exploit the vulnerability paying particular attentions to the application names.% useful for what ?
-•	The flavor of operating systems used and the versions. % useful for what ?
-•	The form and payload strings matching the actual exploit. % that is not a metric
-•	The majority of source IPs sending data traffic. % useful for what ?
-•	The method and nature of data transfer via URLs for direct path to vulnerabilities that are exploitable. % i dont get it
-•	The most important of all is the breakdown of the individual payload and its various instruction sets. % useful for what ? that's not a metric
-•	The segregation between valid and invalid vulnerabilities marking down malicious IPs and the percentage of false positives % we have just one vulnerability
-•	The number of recurring attacks from particular IPs. % thats not a metric
-•	Understanding the status of a vulnerability – whether it is New, Active, Reopened, Verified, Excepted, Pending Remediation or Fixed % The Vul is just one
-•	Bandwidth consumed during the attacks.  % Good one ;) but we can not measure it
-
-There are other exploitability metrics that can be derived from the logs such as:
-•	Access Vector % for what is that useful ? It is the vulnerability
-•	Access Complexity % how can we measure the AC ?
-•	Authentication % why authentication ?
-•	Confidential Impact % why confidential impact ?
-•	Integrity Impact % why itegrity ?
-•	Availability Impact
+Our main focus for the analytics will include identifying clear statistics on events from whom, from where and what attacks recorded in the JSON logs available. The following metric definitions will help us critically analyze the nature and characteristics of attacker behavior, the means of predicting the attack, the severity of the incident and resources needed to mitigate the impact of this vulnerability.    
+\indent
+\paragraph{Attacker Behavior:}
+The inputs for this metric will include geographical locations / regions such as continent, country and city name. The different methods and types of various user agents used to exploit the vulnerability paying particular attentions to the application names. The majority of source IPs sending data traffic. The form and payload strings matching the actual exploit. The number of recurring attacks from particular IPs. The most important of all is the breakdown of the individual payload and its various instruction sets. Thus by analyzing these trends and rankings of different key data fields, one can predict the methodology and characteristic of the attackers behavior. 
+\indent
+\paragraph{Attack Prediction / Probability:}
+The required data for this metric will include specific port numbers that are being used including the majority of source IPs sending data traffic via URLs with payloads attached. The method and nature of data transfer via URLs for direct path to vulnerabilities that are exploitable. The number of port scan attempts without including payloads and recurring attacks from particular IPs. These datasets will help to derive patterns for attack prediction and probability of successfully exploiting the vulnerability. 
+\indent
+\paragraph{Scale of Incident:}
+The inputs for this metric will include the payload strings matching the actual exploit. The amount of valid and invalid vulnerabilities, malicious IPs and the percentage of false positives. The sum of individual attacks within a specific time interval. This metric will therefore help to determine the nature and level of attack strength and effort put in to gain access to critical infrastructure.

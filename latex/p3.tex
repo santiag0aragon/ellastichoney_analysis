@@ -1,18 +1,22 @@
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{"images/1"}
-\caption{Botnet Resourse requirements and Metrics}
-\label{fig:1}
-\end{figure}
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{"images/2"}
-\caption{Infection Vectors}
-\label{fig:2}
-\end{figure}
 
-The following is a list of metrics used by honeypots to detect botnet activity:
-\indent
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.7\linewidth]{"../../../Economics of security/1"}
+% \caption{Botnet Resourse requirements and Metrics}
+% \label{fig:1}
+% \end{figure}
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.7\linewidth]{"../../../Economics of security/2"}
+% \caption{Infection Vectors}
+% \label{fig:2}
+% \end{figure}
+
+%Sorry Pallavi, but this part is not needed in this section...
+%Due to the difficulty in analyzing the level of security, it is possible in principle to represent schematically the conceptual framework to measure the same: Control, Vulnerabilities, Incidents and Prevented losses. The first two metrics are deterministic in nature and latter two  metrics are stochastic in nature. Different economic analyses can be carried out in the framework to provide important information about security issues and mitigation strategies.
+%@Daniel, This make more sense :)
+In the previous section we have seen which kind of metrics would be ideal for different parties facing the botnet issue. Before going to the metrics proposed for each party by this paper, first a list is presented of metrics that are already used by honeypots for botnet detection:
+
 \paragraph{Network Fingerprinting}
 With this methods,  you can create a metric that states which hosts communicates to which hosts. For example, you can track all the IP addresses , the honeypot communicates to	. This is interesting because using this method , you can differentiate between different types of botnets for example if  the honeypot is part of a traditional command and control botnet. The honeypots will only communicate to the controller and  in a peer to peer botnet , the honeypots will create multiple other members of the botnet~\cite{GJ2007}.
 
@@ -23,7 +27,7 @@ With this method, you can create metric that differentiates between a member of 
 With this method, you can create metric where you can visualise the number of attacks originating from a particular geographical location~\cite{AM2006}.
 
 \paragraph{DNS tracking}
-This method is almost the same as Longitudinal tracking, but instead of tracking the geographical location, this method tracks the domain names.[5]
+This method is almost the same as Longitudinal tracking, but instead of tracking the geographical location, this method tracks the domain names.[AM2006]
 
 \paragraph{Port Scan tracking from IDS logs}
 With IDS logs, you can view how many times a host tries to communicate with the honeypot and deduce if a port scan is active and create a metric that state show many port scans each communicating host performs~\cite{WP2010}.
@@ -31,10 +35,8 @@ With IDS logs, you can view how many times a host tries to communicate with the 
 \paragraph{Botnet resources tracking}
 In figure 1,you can see different resource aspects of botnet and each of these resources can be used to create metrics which differentiates between different types of botnets~\cite{GJ2007}.
 
-
 \paragraph{Botnet infection vectors}
 This method is almost the same as the botnet resources metrics but in this metrics, you differentiate between  infection vectors of different types of vectors. See figure 2 and an extra example might be phishing~\cite{GJ2007}.
-
 
 \paragraph{Signature tracking}
 In a few methods seen above, we have seen metrics that could differentiate between different types of botnets and if we use a signature of a specific botnet, for example the backdoor port of a trojan horse that it uses , we can create a metric that tracks the infection rate of that specific botnet~\cite{AM2005}.
