@@ -1,23 +1,19 @@
 \label{cap:sec1}
-Companies and people have more and more problems defending against cyber incidents. It is not possible to defend against all possible cyber attacks, so people have to make strategic decisions on where to invest in their security. Making strategic decisions about security requires us to have a clear understanding of these security issues and for this there is a great need for security metrics~\cite{BR2010}.
 
-To be able to make metrics, we need reliable data. One way getting reliable data about cyber threats is capturing cyber attacks with a honeypot. Honeypots are systems made vulnerable intentionally to attract attackers to get inside the system to track their activities~\cite{WP2010}.
+It is impractical and very expensive to defend every possible vulnerability~\cite{TARA}. Therefore, decision-makers must plan effective security strategies about where and when to invest time and money~\cite{ROSI}. To make decisions on security investments, security investment models are used and these models are build on security metrics~\cite{BR2010}. Not all vulnerabilities will be attacked, so knowing the most likely attack vectors is key in planning effective security measurements~\cite{TARA}. For this knowledge, data about attacking behavior is needed. If we have this data, we can define metrics that measure different aspects of attacking behavior.
 
-This paper proposes meaningful metrics based on the logs from the honey pot called \textit{Elastichoney}. Elastichoney is a elasticsearch honeypot containing the RCE Remote code execution vulnerability -CVE- 2015-1427, which allowed attackers to execute java based code in the search bar of the honeypot~\cite{CVE}. The log files of this honeypot contains data collected over two months and tracked about 8k attempts to attack from over 300 unique IP addresses~\cite{BR2010}.
+One way of getting data about attacking behavior is by using \textit{honeypots}. Honeypots are systems made vulnerable intentionally to attract attackers and track their behavior~\cite{WP2010}. An example of a honeypot is \textit{Elastichoney}~\cite{BR2010}. Elastichoney is an elasticsearch honeypot containing the RCE Remote code execution vulnerability -CVE- 2015-1427, which allowed attackers to execute java based code in its search bar~\cite{CVE}. The log files of Elastichoney contain data collected over two months and tracked about 8k attempts to attack from over 300 unique IP addresses~\cite{BR2010}.
 
-One of the major security issues that the digital world is currently facing is BOTNETS. In the paper \textit{Measuring the cost of cybercrime} you can read that:
-
-\textit{Botnets provide a versatile platform for a variety of criminal business models, including sending spam, committing click fraud, harvesting account credentials, launching denial-of-service attacks, installing scareware and phishing}~\cite{AR2013}.
-
-The authors of this paper think that the logs of Elastichoney tracks the activities of one or more botnets, because the following two features can be found in the attack patterns in the logs:
-First, by using the code execution vulnerability, the same operation steps are performed on multiple different files:
+When looking in the data collected by Elastichoney, a major security issue can be found, namely \textit{Botnet Infection}. The attacking behavior of botnet infection found in the data can be summarised as follows:
 \begin{itemize}
-\item Downloading the file using the command wget,
-\item Making the file location accessible by using the command chmod 777,
-\item Executing the file,
-\item Removing the file using the command rm.
+\item[-] Using the code execution vulnerability, operation steps were performed on multiple different files: \textit{wget} file, \textit{chmod 777} on file location, execute file, removing file.   
+\item[-] Operations on the same file were requested by multiple different sources.
 \end{itemize}
-Second, the operations on files were requested by multiple different sources.
+In this paper we will look at two parties who have great incentive to know about the attacking behavior of botnet infection, namely \textit{Internet Service Providers (ISP's)} and \textit{Enforcement agencies}.
 
-These two features hints at distributed automated attacks, which is a clear indicator of botnet activity.
+Botnet infection is a major security issue for ISP's, because 27\% of the overall unwanted traffic on the Internet can be attributed to botnet-related spreading activity~\cite{AM2006}. 
+
+Enforcement agencies want to counter botnet infection, because botnets are used as a platform for various criminal business models like sending spam, committing click fraud, harvesting account credentials, launching denial-of-service attacks, installing scareware and phishing~\cite{AR2013}.
+
+The rest of this paper will discuss metrics that measure different aspects of the attacking behavior of botnet infection and how these metrics can be used by ISP's and enforcement agencies in making effective security investments.
 
