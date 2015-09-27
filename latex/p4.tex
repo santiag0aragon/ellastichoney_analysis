@@ -1,20 +1,31 @@
 %!TEX root = main.tex
-We define a number of metrics that can be used to characterize the data set of RCE vulnerability. For each metric, we can define qualitative levels and quantitative levels for which a numerical value is associated with each level. These metrics represent the intrinsic characteristics of the vulnerability. They can be used to measure the exploitability factor and impact to the infected systems. The following metric definitions will help us critically analyze the nature and characteristics of attacker behavior, the means of predicting the level of attack, the severity of the incident and resources needed to mitigate the impact of this vulnerability.
+
+
+
+In this section, we propose a number of metrics that can be used to extract valuable information from the \textit{Ellastichoney} dataset. For each metric we define its input, output and the utility for the interested party mentioned in section \ref{cap:sec2}.
 \indent
-\paragraph{Access Vector:}
-It measures how the vulnerability is exploited, for instance, locally or remotely. The more remote an attacker can be geographically, the greater the chances of vulnerability being exploited throughout the network attack.  The input for this metric will include the number of attacks coming from various counties and also pinpointing the regional locations according to cities. This metric will help measure the scale of attacks coming from a particular geographical location. Furthermore, we can assess to block the IP ranges as per the geographical source of the attack coming from to mitigate the risk of potential impacts to critical infrastructure.
+\subsection{BN propagation}
+    % \paragraph{Number of Attacks/Recognition:}
+    % This metric classify  and quantify the attacker's attempt either as an \textit{attack}, attempt at actually doing something bad or a \textit{recognition}, when an attacker is scanning the network to see if some instances are vulnerable.
+
+    \paragraph{BN growth}It measures the number new IPs where the BNI attempts are being performed. It is useful to see the aggregate growth of the BN, and to help to infer a BNI rate.
+
+    \paragraph{BNI attempts}
+    It measures the number of attacks executed daily. We will use this data to analyze the BN activity. This metric could be useful to measure the effectiveness of mitigating controls.
+
+\subsection{Network infection rate}
+    \paragraph{Subnet infection rate} By summarizing the number of attacks that a particular IP perform and listing all the IP within a network, we can assign certain subnetworks an infection rate. I.e. Number infected IPs vs total IPs in a certain subnetwork.
+
+    We can view the top source IPs that were most prominent during the attack, simply by analyzing the number of attacks coming from each IP. This could be used for reputation analysis and to identify of infected IPs, i.e. a LEA could publish a report of the most active IP within a BN to encourage the ISPs to take action against them.
+
+    \paragraph{Top Attackers}
+    Taking a look to top source IPs that were most active, i.e. counting the number of attacks coming from each IP and sorting them according its activity. This could be used for reputation analysis and to identify of infected IPs, i.e. a LEA could publish a report of the most active IP within a BN to encourage the ISPs to take action against them.
+
+
+\subsection{BN geographical and digital location.} The input for this metric will include the number of attacks coming from various counties and also pinpointing the regional locations according to cities. This metric will help measure the scale of attacks coming from a particular geographical location. Furthermore, we can assess to block the IP ranges as per the geographical source of the attack coming from to mitigate the risk of potential impacts to critical infrastructure.
+
+
+\subsection{BNI target machines.}
+    We identify the characteristics of the BN machines such as operating systems, web browsers and the content type used to exploit the vulnerability. The output could help the ISP to target awareness campaigns across its subscribers.
 \indent
-\paragraph{Scale of Attack:}
-It will measure the growth in number of attacks executed daily. We will use this data to analyze the daily trends in the level and strength of attack exploiting the vulnerability. This will be beneficial to measure the effectiveness of mitigating controls for business continuity of core systems and applications and the protection of confidentiality, integrity and availability of data.
-\indent
-\paragraph{Significant Attack Method:}
-We will use this metric to assess the nature of attack by measuring the number of GET and POST request types / methods. A GET request is used to retrieve standard, static content like images and data from a web server while POST requests are used to access dynamically generated resources that will involve server side application processing. This will help us understand the aim of attacker whether to inundate the server or application with multiple requests that are each as processing-intensive as possible. Because the attack is most effective when it forces the server or application to allocate the maximum resources possible in response to each single request.
-\indent
-\paragraph{Number of Attacks/Recon:}
-We use this metric to classify the number of server contacts as either an “attack” (attempt at actually doing something bad) vs “recon” (which we assume is just a test to see if the instances are vulnerable). This is vital to assess the severity of attack and look into number of false positive / negative.
-\indent
-\paragraph{Top Attackers:}
-We can view the top source IPs that were most prominent during the attack, simply by analyzing the number of attacks against each unique IP. This could be useful for reputation analysis of zombies involved in the attack and identification of IPs to block as a preventive action.
-\indent
-\paragraph{Probability of Attack:}
-We compare the number of attacks coming from particular operating systems, web browsers and the content type used to exploit the vulnerability. The combination of these features help to calculate the probability of attack by using historic data analysis on the basis of most significant attacks using such tools and applications.
+
