@@ -1,5 +1,5 @@
 %!TEX root = main.tex
-
+\label{cap:sec4}
 
 
 In this section, we propose a number of metrics that can be used to extract valuable information from the \textit{Ellastichoney} dataset. For each metric we define its input, output and the utility for the interested party mentioned in section \ref{cap:sec2}. For each ideal metric that we define in section \ref{cap:sec2} we name some metric implementations that help us to extract valuable information from the dataset in use.
@@ -14,16 +14,17 @@ In this section, we propose a number of metrics that can be used to extract valu
     It measures the number of attacks executed daily. We will use this data to analyze the BN activity. This metric could be useful to measure the effectiveness of mitigating controls.
 
 \subsection{Network infection rate}
-    \subsubsection{Subnet infection rate} By summarizing the number of attacks that a particular IP perform and listing all the IP within a network, we can assign certain subnetworks an infection rate. I.e. Number infected IPs vs total IPs in a certain subnetwork.
+By summarizing the number of attacks that a particular IP perform and listing all the IP within a network, we can assign certain subnetworks an infection rate. I.e. Number infected IPs vs total IPs in a certain subnetwork.
 
-    \subsubsection{BNI IP source}
-    Taking a look to top source IPs that were most active, i.e. counting the number of attacks coming from each IP and sorting them according its activity. This could be used for reputation analysis and to identify of infected IPs, i.e. a LEA could publish a report of the most active IP within a BN to encourage the ISPs to take action against them.
+    % \subsubsection{BNI IP source}
+    % Taking a look to source IPs that were most active, i.e. counting the number of attacks coming from each IP and sorting them according its activity. This could be used for reputation analysis and to identify of infected IPs, i.e. a LEA could publish a report of the most active IP within a BN to encourage the ISPs to take action against them.
 
 
 \subsection{BN geographical and digital location.} The input for this metric will include the number of attacks coming from various counties and also pinpointing the regional locations according to cities. This metric will help measure the scale of attacks coming from a particular geographical location. Furthermore, we can assess to block the IP ranges as per the geographical source of the attack coming from to mitigate the risk of potential impacts to critical infrastructure.
 
+% TODO a proper metric implementation have not been done
+% \subsection{BNI target machines.}
+%     We identify the characteristics of the BN machines such as operating systems, web browsers and the content type used to exploit the vulnerability. The output could help the ISP to target awareness campaigns across its subscribers.
 
-\subsection{BNI target machines.}
-    We identify the characteristics of the BN machines such as operating systems, web browsers and the content type used to exploit the vulnerability. The output could help the ISP to target awareness campaigns across its subscribers.
 \indent
 

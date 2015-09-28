@@ -1,124 +1,59 @@
-\documentclass{article}
-\usepackage{graphicx}
-\graphicspath{ {images/} }
- 
-\begin{document}
+%!TEX root = main.tex
 
-lorem ipsum, lorem ipsum, lorem ipsum..
- 
+The evaluation and results of the metrics defined in section~\ref{cap:sec4} is presented in this section. We highlight the most useful metrics, however a previous and complete statistical analysis of the variables in the dataset have been performed. I.e., over 93\% of the BNI attempts are comming from China,
+
+\subsection{BN propagation}
 \begin{figure}[h]
-\caption{Countries Vs. No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{1}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{Cities in China Vs No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{2}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{User Agent vs No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{5}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{OS Vs. No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{6}
+    \label{fig:agg_grow}
+    \caption{BN growth}
+    \centering
+    \includegraphics[width=\linewidth]{images/a_new_ip_da}
 \end{figure}
 
 
-lorem ipsum, lorem ipsum, lorem ipsum..
+\begin{figure*}[ht]
+    \begin{subfigure}[ht]{0.5\linewidth}
+        \caption{Unique IP per day}
+        \centering
+        \includegraphics[width=\textwidth]{images/uni_ip_day}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[ht]{0.5\textwidth}
+        \caption{BNI attempts}
+        \centering
+        \includegraphics[width=\linewidth]{images/att_day}
+    \end{subfigure}
 
+\end{figure*}
+
+
+\subsection{Network infection rate}
 \begin{figure}[h]
-\caption{Browser Vs. No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{7}
+    \caption{Subnet 218.10.0.0 attacks}
+    \centering
+        \includegraphics[width=0.9\linewidth]{images/subnet}
 \end{figure}
 
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{Methods Vs. No. of Attacks}
+\subsection{BN geographical and digital location.}
+\begin{figure*}[h]
+\caption{BNI geolocation~\cite{map}}
 \centering
-\includegraphics[width=0.7\linewidth]{8}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{Attack type vs. No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{10}
-\end{figure}
+    \includegraphics[width=0.9\linewidth]{images/map}
+\end{figure*}
 
 
-lorem ipsum, lorem ipsum, lorem ipsum..
+% TODO mention IPS data
+\begin{figure*}[ht]
+    \begin{subfigure}[ht]{0.5\linewidth}
+        \caption{Infected IPs per ISP}
+    \centering
+    \includegraphics[width=\linewidth]{images/isp_no_ip}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[ht]{0.5\textwidth}
+    \caption{BNI attempts per ISP}
+    \centering
+    \includegraphics[width=\linewidth]{images/isp_no_att}
+    \end{subfigure}
 
-\begin{figure}[h]
-\caption{Date vs. Number of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{11}
-\end{figure}
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{Top Source IPs vs. No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{12}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-
-\begin{figure}[h]
-\caption{Aggregate new unique IP per day}
-\centering
-\includegraphics[width=0.7\linewidth]{a_new_ip_da}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-
-\begin{figure}[h]
-\caption{ISP vs. No. of Attacks}
-\centering
-\includegraphics[width=0.7\linewidth]{isp_no_att}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{ISP vs. No of Infected IPs}
-\centering
-\includegraphics[width=0.7\linewidth]{isp_no_ip}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{Unique IP per day}
-\centering
-\includegraphics[width=0.7\linewidth]{uni_ip_day}
-\end{figure}
-
-lorem ipsum, lorem ipsum, lorem ipsum..
-
-\begin{figure}[h]
-\caption{No of Attacks vs New IP }
-\centering
-\includegraphics[width=0.7\linewidth]{h5}
-\end{figure}
-
-
-
-\end{document}
+\end{figure*}
