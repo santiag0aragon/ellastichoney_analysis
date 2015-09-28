@@ -27,9 +27,6 @@ Enforcement agencies use this metric to know about possible network attacks and 
 The following  figure 1 represent  cluster quality over time of botnets (Carberp, Hesperbot, TInba, Ramnit, Gamarue and Cridex) with details of measurement mentioned in the next figure 2.
 
 
-
-
-
 \paragraph{ Detection rate }
 
 The  parameters such as total number of flows, Net flow size, internal host count, concurrently  active, start date , end date and length(days) of botnets are measured. The detection rate is then analyzed by using accumulated botnet samples and traces ~\cite{ haltas2014automated }.
@@ -37,12 +34,6 @@ The  parameters such as total number of flows, Net flow size, internal host coun
 Enforcement agencies use this metric to know about possible network attacks and botnet activities. 
 
 The following  figure 3 represent  cluster quality over time of botnets (Carberp, Hesperbot, TInba, Ramnit, Gamarue and Cridex) with details of measurement mentioned in the above figure 2.
-
-
-
-
-
-
 
 \paragraph{ Infection rate }
 
@@ -52,16 +43,6 @@ Enforcement agencies use this metric to know about possible network attacks and 
 
 The following  figure 4 represent  cluster quality over time of botnets (Carberp, Hesperbot, TInba, Ramnit, Gamarue and Cridex) with details of measurement mentioned in the above figure 2.
 
-
-
-@inproceedings{haltas2014automated,
-	title={An automated bot detection system through honeypots for large-scale},
-	author={Haltas, Fatih and Uzun, Ersin and Siseci, Necati and Posul, Abdulkadir and Emre, Bakir},
-	booktitle={Cyber Conflict (CyCon 2014), 2014 6th International Conference On},
-	pages={255--270},
-	year={2014},
-	organization={IEEE}
-}
 \paragraph{ Connection ratio }
 
 This is the ratio of number of bots in the largest connected graph to number of remaining bots (peer to peer botnets) cite~\{ wang2010peer }.
@@ -74,16 +55,6 @@ This is the ratio of average degree of the largest connected graph to average de
 
 Enforcement agencies use this metric to know how densely the remaining botnet is connected together after bot removal.
 
-@incollection{wang2010peer,
-	title={Peer-to-peer botnets},
-	author={Wang, Ping and Aslam, Baber and Zou, Cliff C},
-	booktitle={Handbook of Information and Communication Security},
-	pages={335--350},
-	year={2010},
-	publisher={Springer}
-}
-
-
 \paragraph{ Network diameter }
 
 Network diameter is the average geodesic length of the network.  The dynamics of the network such as communication, information and epidemics are slow if "l" is large. This metric serves to be relevant  because  with every message passed through botnet , probability of failure or disconnection exists~\cite{ Strayer08botnetdetection }.
@@ -95,23 +66,6 @@ Enforcement agencies use this metric to know about efficiency of a botnet. A bot
 Bots generally lose and gain new members over time. If the victim machines are performing  tasks like storing files for download or sending spam messages from a queue, a higher degree of connection  between bots provides fault tolerance and  recovery ~\cite{ Strayer08botnetdetection }.
 
 Enforcement agencies use this metric to know about robustness of a botnet.
-
-@INPROCEEDINGS{Strayer08botnetdetection,
-	author = {W. Timothy Strayer and David Lapsely and Robert Walsh and Carl Livadas},
-	title = {Botnet detection based on network behavior},
-	booktitle = {In Botnet Detection: Countering the Largest Security},
-	year = {2008},
-	pages = {1--24},
-	publisher = {Springer}
-}
-
-
-[Could not find details or paper which could explain these 3 metrics]
-\paragraph{ Connection degree}
-
-\paragraph{ Exposure ratio }
-
-\paragraph{ Average hop count }
 
 \paragraph{Network Telescope}
 %shud this come under prevenetedlosses/impact or incident?
