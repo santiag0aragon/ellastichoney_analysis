@@ -11,6 +11,114 @@
 % \label{fig:2}
 % \end{figure}
 
+<<<<<<< fab1a6af3640efb63f6ebc440ea3981dfbbcd1e0
+=======
+%Sorry Pallavi, but this part is not needed in this section...
+%Due to the difficulty in analyzing the level of security, it is possible in principle to represent schematically the conceptual framework to measure the same: Control, Vulnerabilities, Incidents and Prevented losses. The first two metrics are deterministic in nature and latter two  metrics are stochastic in nature. Different economic analyses can be carried out in the framework to provide important information about security issues and mitigation strategies.
+%@Daniel, This make more sense :)
+In the previous section we have seen which kind of metrics would be ideal for different parties facing the botnet issue. Before going to the metrics proposed for each party by this paper, first a list is presented of metrics that are already used by honeypots for botnet detection:
+
+\paragraph{Cluster quality }
+
+The  parameters such as total number of flows, Net flow size, internal host count, concurrently  active, start date , end date and length(days) of botnets are measured. The cluster quality is then analyzed by using accumulated botnet samples and traces ~\cite{ haltas2014automated }.
+
+Enforcement agencies use this metric to know about possible network attacks and botnet activities. 
+
+The following  figure 1 represent  cluster quality over time of botnets (Carberp, Hesperbot, TInba, Ramnit, Gamarue and Cridex) with details of measurement mentioned in the next figure 2.
+
+
+
+
+
+\paragraph{ Detection rate }
+
+The  parameters such as total number of flows, Net flow size, internal host count, concurrently  active, start date , end date and length(days) of botnets are measured. The detection rate is then analyzed by using accumulated botnet samples and traces ~\cite{ haltas2014automated }.
+
+Enforcement agencies use this metric to know about possible network attacks and botnet activities. 
+
+The following  figure 3 represent  cluster quality over time of botnets (Carberp, Hesperbot, TInba, Ramnit, Gamarue and Cridex) with details of measurement mentioned in the above figure 2.
+
+
+
+
+
+
+
+\paragraph{ Infection rate }
+
+The  parameters such as total number of flows, Net flow size, internal host count, concurrently  active, start date , end date and length(days) of botnets are measured. The detection rate is then analyzed by using accumulated botnet samples and traces ~\cite{ haltas2014automated }.
+
+Enforcement agencies use this metric to know about possible network attacks and botnet activities. 
+
+The following  figure 4 represent  cluster quality over time of botnets (Carberp, Hesperbot, TInba, Ramnit, Gamarue and Cridex) with details of measurement mentioned in the above figure 2.
+
+
+
+@inproceedings{haltas2014automated,
+	title={An automated bot detection system through honeypots for large-scale},
+	author={Haltas, Fatih and Uzun, Ersin and Siseci, Necati and Posul, Abdulkadir and Emre, Bakir},
+	booktitle={Cyber Conflict (CyCon 2014), 2014 6th International Conference On},
+	pages={255--270},
+	year={2014},
+	organization={IEEE}
+}
+\paragraph{ Connection ratio }
+
+This is the ratio of number of bots in the largest connected graph to number of remaining bots (peer to peer botnets) cite~\{ wang2010peer }.
+
+Enforcement agencies use this metric to know how well a botnet survives a defence action.
+
+\paragraph{ Connection degree ratio }
+
+This is the ratio of average degree of the largest connected graph to average degree of original botnet(peer to peer botnets) cite~\{ wang2010peer }.
+
+Enforcement agencies use this metric to know how densely the remaining botnet is connected together after bot removal.
+
+@incollection{wang2010peer,
+	title={Peer-to-peer botnets},
+	author={Wang, Ping and Aslam, Baber and Zou, Cliff C},
+	booktitle={Handbook of Information and Communication Security},
+	pages={335--350},
+	year={2010},
+	publisher={Springer}
+}
+
+
+\paragraph{ Network diameter }
+
+Network diameter is the average geodesic length of the network.  The dynamics of the network such as communication, information and epidemics are slow if "l" is large. This metric serves to be relevant  because  with every message passed through botnet , probability of failure or disconnection exists~\cite{ Strayer08botnetdetection }.
+
+Enforcement agencies use this metric to know about efficiency of a botnet. A botnet is evaluated based on it communication efficiency depending on its role(used to forward command and control messages, update bot executable code, gather host-based information)
+
+\paragraph{ Botnet Robustness }
+
+Bots generally lose and gain new members over time. If the victim machines are performing  tasks like storing files for download or sending spam messages from a queue, a higher degree of connection  between bots provides fault tolerance and  recovery ~\cite{ Strayer08botnetdetection }.
+
+Enforcement agencies use this metric to know about robustness of a botnet.
+
+@INPROCEEDINGS{Strayer08botnetdetection,
+	author = {W. Timothy Strayer and David Lapsely and Robert Walsh and Carl Livadas},
+	title = {Botnet detection based on network behavior},
+	booktitle = {In Botnet Detection: Countering the Largest Security},
+	year = {2008},
+	pages = {1--24},
+	publisher = {Springer}
+}
+
+
+[Could not find details or paper which could explain these 3 metrics]
+\paragraph{ Connection degree}
+
+\paragraph{ Exposure ratio }
+
+\paragraph{ Average hop count }
+
+\paragraph{Network Telescope}
+%shud this come under prevenetedlosses/impact or incident?
+This is a control metric.
+
+A block of IP addresses from the entire range of IPv4 addresses are unassigned to hosts. This network is called "darknet". These block of IP addresses are still advertised on the internet through Border gateway(BGP) protocol making it BGP reachable. If any host from anywhere in the world(on the internet) sends a packet to one of these addresses, this packet would travel all over the world, would reach the router that advertises this routes, would be silently dropped (without any responses) but this would be logged. Network telescopes would be used to observe this internet traffic. By definition, this traffic is unsolicited since it does not have any hosts assigned to the addresses. Most of this unsolicited traffic would be malicious i.e. traffic from malware, traffic from infected hosts that randomly scan entire internet address space and so on~\cite{AM2014}.
+>>>>>>> updated
 
 In the previous section we have seen which kind of metrics would be ideal for ISP's and LEA's in facing the botnet infection issue.
 
@@ -46,6 +154,7 @@ Enforcement agencies use this metric to know about possible network attacks and 
 % The following  figure represent  cluster quality over time of botnets (Carberp, Hesperbot, TInba, Ramnit, Gamarue and Cridex) with details of measurement mentioned in the above figure 2.
 \paragraph{ Connection ratio }
 
+<<<<<<< fab1a6af3640efb63f6ebc440ea3981dfbbcd1e0
 This is the ratio of number of bots in the largest connected graph to number of remaining bots (peer to peer botnets).
 
 Enforcement agencies use this metric to know how well a botnet survives a defence action.
@@ -53,6 +162,8 @@ Enforcement agencies use this metric to know how well a botnet survives a defenc
 \paragraph{ Connection degree ratio }
 
 This is the ratio of average degree of the largest connected graph to average degree of original botnet(peer to peer botnets).
+=======
+>>>>>>> updated
 
 Enforcement agencies use this metric to know how densely the remaining botnet is connected together after bot removal.
 
