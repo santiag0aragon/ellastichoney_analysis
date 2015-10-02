@@ -1,0 +1,62 @@
+%Sorry Pallavi, but this part is not needed in this section...
+%Due to the difficulty in analyzing the level of security, it is possible in principle to represent schematically the conceptual framework to measure the same: Control, Vulnerabilities, Incidents and Prevented losses. The first two metrics are deterministic in nature and latter two  metrics are stochastic in nature. Different economic analyses can be carried out in the framework to provide important information about security issues and mitigation strategies.
+%@Daniel, This make more sense :)
+In the previous section we have seen which kind of metrics would be ideal for different parties facing the botnet issue. Before going to the metrics proposed for each party by this paper, first a list is presented of metrics that are already used by honeypots for botnet detection:
+
+\paragraph{Network Telescope}
+%shud this come under prevenetedlosses/impact or incident?
+This is a control metric.
+
+A block of Ip addresses from the entire range of IPv4 addresses are unassigned to hosts. This network is called "darknet". These block of ip addresses are still advertised on the internet through Border gateway(BGP) protocol making it BGP reachable. If any host from anywhere in the world(on the internet) sends a packet to one of these addresses, this packet would travel all over the world, would reach the router that advretises this routes, would be silently dropped (without any repsonses) but this would be logged. Network telescopes would be used to observe this internet traffic. By definition, this traffic is unsolicited since it does not have any hosts assigned to the addreses.Most of this unsolicted traffic would be malicious i.e traffic from malware, traffic from infected hosts that randomnly scan entire internet address space and so on~\cite{AM2014}.
+
+Enforcement agencies use this to create metric out of samples of telescope data containing security event signatures. This metric would inform about possible network attacks, botnet activities and other misconfigurations.
+
+
+\paragraph{Network Fingerprinting}
+This is a control metric.
+%prevented losses/impact or incident?
+
+With this method, one can create a metric that states which hosts communicates to which hosts. For example, one can track all the IP addresses , the honeypot communicates to. The honeypots will only communicate to the controller and in a peer to peer botnet , the honeypots will create multiple other members of the botnet~\cite{GJ2007}.
+
+Enforcement agencies use this to create metric which contains information of traffic logs that are automatically processed to extract a network fingerprint, the targets of any DNS requests, the destination IPaddresses, the contacted ports (and protocols), and whether or not default scanning behavior was detected. This would be used to differentiate between different types of botnets for example if the honeypot is part of a traditional command and control botnet~\cite{AM2006}.
+
+
+\paragraph{IRC related features}
+%control or incident?
+This is a control metric.
+
+With this method, one can create metric that differentiates between a member of a IRC type botnet and a non-infected member because these type of botnets send and receive signature commands over IRC channels~\cite{AM2006}.
+
+Enforcement agencies use this to create metric which contains information of initial password to establish an IRC session with the server, the format of the nickname and username chosen by the bot, the particular modesset, and which IRC channels are automatically joined (with associated channel passwords).This is used to  identify infected members(botnet) in the network ~\cite{AM2006}.
+
+Network fingerprinting and IRC related features provide enough information to join a botnet in the wild~\cite{AM2006}.
+
+\paragraph{Longitudinal tracking}
+This is an incident metric.
+%shud it be prevented losses/impact?
+
+With this method, one can create metric where you can visualise the number of attacks originating from a particular geographical location~\cite{AM2006}.
+
+Enforcement agencies use this to create metrics containing information about geographical location to track the location of origination of a specific botnet.
+
+\paragraph{DNS tracking}
+This is an incident metric.
+%shud it be prevented losses/impact?
+This method is almost the same as Longitudinal tracking, but instead of tracking the geographical location, this method tracks the domain names~\cite{AM2006}.
+
+Enforcement agencies use this to create metrics containing information about domain names. This is used to probe the caches of a large number of DNS servers in order to infer the footprint of a particular botnet (total number of DNS servers giving cache hits)~\cite{AM2006}.
+
+\paragraph{Botnet resources tracking}
+This is an incident metric.
+%shud this be prevented losses/impact metric?
+
+In figure 1,you can see different resource aspects of botnet and each of these resources can be used to create metrics which differentiates between different types of botnets~\cite{GJ2007}.
+
+Enforcement agencies uses this to create metrics for each resource to characterize different botnets. It contains information about distinguishing characteristics. For example, peer-to-peer botnets would have network characteristics like distinctive communication graph, higher command latency and so on~\cite{GJ2007}.
+
+\paragraph{Signature tracking}
+This is a prevented losses/impact metrics.
+%Shud it be something else?
+
+Enforcement agencies uses this to create a metric that tracks the infection rate of a specific botnet by using the
+signature of a specific botnet, for example a trojan horse and its backdoor port as signature~\cite{AM2005}.
