@@ -1,20 +1,90 @@
-
 1 Who is the problem owner of the security issue as measured in your first assignment?
+    Santiago:
+    ISP is the owner because... owner means ... the problem is in their scope and therefore ...
+    Why does the ISP is interested in fixing the problem? (please take a look at assignment 1)
+
+    Pallavi:
+    LEA and ISPs(I would not like to include ISPs because they lack incentives to fight bots as they may have to invest without reaping any exclusive benefits, it is often businesses who has to take steps to fight them. I know that we have mentioned only ISPs and LEA)
 
 2 What relevant differences in security performance does your metric reveal?
+    Pallavi:
+        a)We can assign infection rate to sub networks(The degree to which the different parts of network has been infected)
+        b)We can point to the regional locations according to cities and can help measure the scale of attacks coming from a particular geographical location
+        c)we can mitigate the risk of potential impacts to critical infrastructure based on the geographical source(the attack is coming from )
+        d)To measure the effectiveness of mitigating controls.
 
 3 What risk strategies can the problem owner follow to reduce the security issue as measured in your first assignment?
 
+    Santiago:
+
+    Pallavi:
+    a)Traditional methods:
+        1)Taking Down the C&C Server
+        2)Sinkholing Malicious Traffic
+        3)Cleaning Infected Systems
+    b)Proactive measure:
+        1)The Addressing Layer: strategies targeting the routing and the addressing layer of
+        a botnet infrastructure
+        2)The Command Layer:Attacking the command layer of a botnet requires knowledge of the protocol used. An
+        easy example would be an IRC-based network where a remove command instructs bots
+        to uninstall themselves from infected systems.
+        3)Exploitation :Exploit based strategies make use of the fact, that even botnets contain bugs and
+        programming flaws that result in vulnerabilities which can be exploited to gain control
+        either over a central component (like a C&C server) or over bot-infected machines
+
 4 What other actors can influence the security issue as measured in your first assignment?
-
-Cloud Providers
-LAE
-
+    Santiago:
+     + Cloud Providers
+     + LAE
+    Pallavi:
+    Businesses and individuals[initially I thought we had to talk about factors which contribute to the problem but later when i read the next question, I realized that it something else]
 
 5 Identify the risk strategies that the actors can adopt to tackle the problem
-    + are there actors with different strategies? why?
-    + have the strategies changed significantly over time in a way that reduces or increases risks?
+    + Are there actors with different strategies? why?
+    Pallavi:
+        Yes,these actors have different strategies.
+        Businesses:
+        a)Strategies:
+
+        Consider Network Compartmentalization
+        Provide Least Privilege.
+        Install Host-Based Intrusion Prevention
+        Filter Data Leaving the Network.
+
+        Businesses protect their valuable information assets from botnets
+
+        Individuals:
+        Install a Windows Firewall.
+        Disable AutoRun.
+        Install Reputation-Based Filtering.
+
+        An individual's goal is to protect himself/herself from being part of a botnet.
+
+    + Have the strategies changed significantly over time in a way that reduces or increases risks?
+
+    Santiago:
+        Clever dynamic attacker
+
+    Pallavi:
+        Malware attacks are almost entirely an automated activity. The days where a lone hacker decides to attack a single site are over. The goal is to use search and destroy programs to find thousands of vulnerable computers into which malware can then be installed.
+        The goal? Build a botnet; a large network of computers that is ready to do the bidding of the controller.
+        In the real world context of automated attacks, an excellent protection strategy consists of making your site
+         and network less vulnerable than others. By identifying and eliminating your underlying vulnerabilities instead of attempting to detect and block 100% of the attacks against them you make your network
+         harder to attack than hundreds of thousands of others who have left their vulnerabilities in place.
+        By addressing this relatively small set of vulnerability issues, you can easily cause the attacker
+        (typically an automated 'bot') to move to their next target in the target list rather
+        than trying harder to penetrate you. It is effective to be proactive and run periodic
+        vulnerability scans to detect the relatively easy to find known vulnerabilities
+        that are used to break into the network, and plug those holes before they are used by attackers.
+        By addressing this relatively small set of vulnerability issues, you can easily cause the attacker (typically an automated 'bot') to move to their next target in the target list rather than trying harder to penetrate you.
 
 6 Pick one of the risk strategies identified previously and calculate the Return on Security Investment (ROSI) for that particular strategy. I.e.,
-+ Estimate the costs involved in following that strategy
-+ Estimate the benefits of following that strategy (assume a particular loss distribution)
+    + Estimate the costs involved in following that strategy
+
+        I would like to talk about exploitation:
+        Exploit based strategies make use of the fact, that even botnets contain bugs and programming flaws that result in vulnerabilities which can be exploited to gain control either over a central component (like a C&C server) or over bot-infected machines.
+        Such vulnerabilities may range from misconfiguration, like e.g., an insecure IRC server setup that allows other users to control a channel, to security holes in software, like remotely-exploitable buffer overflows.
+
+It is the cost in involved in paying devolopers and people who debug.
+
+    + Estimate the benefits of following that strategy (assume a particular loss distribution)
