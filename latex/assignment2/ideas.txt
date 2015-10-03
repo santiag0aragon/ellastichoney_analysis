@@ -11,7 +11,17 @@ b)We can point to the regional locations according to cities and can help measur
 c)we can mitigate the risk of potential impacts to critical infrastructure based on the geographical source(the attack is coming from )
 d)To measure the effectiveness of mitigating controls.
 3 What risk strategies can the problem owner follow to reduce the security issue as measured in your first assignment?
-a)
+a)Traditonal methods:
+1)Taking Down the C&C Server
+2)Sinkholing Malicious Traffic
+3)Cleaning Infected Systems 
+b)Proactive measure:
+1)The Addressing Layer: strategies targeting the routing and the addressing layer of
+a botnet infrastructure
+2)The Command Layer:Attacking the command layer of a botnet requires knowledge of the protocol used. An
+easy example would be an IRC-based network where a remove command instructs bots
+to uninstall themselves from infected systems. 
+3)Exploitation 
 4 What other actors can influence the security issue as measured in your first assignment?
 
 5 Identify the risk strategies that the actors can adopt to tackle the problem
