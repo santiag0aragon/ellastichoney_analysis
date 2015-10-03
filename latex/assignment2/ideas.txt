@@ -7,10 +7,14 @@
 
 4 What other actors can influence the security issue as measured in your first assignment?
 
+Cloud Providers
+LAE
+
+
 5 Identify the risk strategies that the actors can adopt to tackle the problem
-are there actors with different strategies? why?
-have the strategies changed significantly over time in a way that reduces or increases risks?
+    + are there actors with different strategies? why?
+    + have the strategies changed significantly over time in a way that reduces or increases risks?
 
 6 Pick one of the risk strategies identified previously and calculate the Return on Security Investment (ROSI) for that particular strategy. I.e.,
-7 Estimate the costs involved in following that strategy
-8 Estimate the benefits of following that strategy (assume a particular loss distribution)
++ Estimate the costs involved in following that strategy
++ Estimate the benefits of following that strategy (assume a particular loss distribution)
