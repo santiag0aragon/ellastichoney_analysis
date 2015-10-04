@@ -4,6 +4,9 @@
     Why does the ISP is interested in fixing the problem? (please take a look at assignment 1)
 
     MAYBE the owner is the network owner and in that way we can include cloud providers, etc
+    
+    Owais: 
+    If we have mentioned LEA in assignment 1, then we should also consider Police and Intelleigence Agencies, since government     websites and insititutions also get targeted. this can be bad for their reputation and abilities to detect cyber threats on     a nationwide scale.
 
     Pallavi:
     LEA and ISPs(I would not like to include ISPs because they lack incentives to fight bots as they may have to invest without reaping any exclusive benefits, it is often businesses who has to take steps to fight them. I know that we have mentioned only ISPs and LEA)
@@ -11,6 +14,9 @@
 2 What relevant differences in security performance does your metric reveal?
     Santiago:
     Network owner infection rate
+    
+    Owais:
+    
 
     Pallavi:
         a)We can assign infection rate to sub networks(The degree to which the different parts of network has been infected)
