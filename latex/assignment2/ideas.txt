@@ -58,6 +58,14 @@
      + Cloud Providers (maybe also the owner of the problem)
      + LAE
      + Affected parties (DOS spam victims)?
+     
+     Owais:
+     + PUBLIC SECTOR / GOVERNMENT
+     + Vendors of Operating Systems / Softwares
+     + Information Security Agencies
+     + Telecom Providers - offering mobile web services like WAP, Edge, 3G and 4G
+     + National / International Cyber Security Alliances
+     
     Pallavi:
     Businesses and individuals[initially I thought we had to talk about factors which contribute to the problem but later when i read the next question, I realized that it something else]
 
