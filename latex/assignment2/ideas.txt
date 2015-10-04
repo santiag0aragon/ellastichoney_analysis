@@ -3,10 +3,15 @@
     ISP is the owner because... owner means ... the problem is in their scope and therefore ...
     Why does the ISP is interested in fixing the problem? (please take a look at assignment 1)
 
+    MAYBE the owner is the network owner and in that way we can include cloud providers, etc
+
     Pallavi:
     LEA and ISPs(I would not like to include ISPs because they lack incentives to fight bots as they may have to invest without reaping any exclusive benefits, it is often businesses who has to take steps to fight them. I know that we have mentioned only ISPs and LEA)
 
 2 What relevant differences in security performance does your metric reveal?
+    Santiago:
+    Network owner infection rate
+
     Pallavi:
         a)We can assign infection rate to sub networks(The degree to which the different parts of network has been infected)
         b)We can point to the regional locations according to cities and can help measure the scale of attacks coming from a particular geographical location
@@ -34,8 +39,9 @@
 
 4 What other actors can influence the security issue as measured in your first assignment?
     Santiago:
-     + Cloud Providers
+     + Cloud Providers (maybe also the owner of the problem)
      + LAE
+     + Affected parties (DOS spam victims)?
     Pallavi:
     Businesses and individuals[initially I thought we had to talk about factors which contribute to the problem but later when i read the next question, I realized that it something else]
 
