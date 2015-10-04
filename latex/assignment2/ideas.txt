@@ -20,6 +20,7 @@
     Help clients to be aware of compromised machines and disinfect their systems.
     Detection of botnet infrastructure operating within the cutomer base.
     Effort needed to optimise the networks load balancing capabilities to ensure avaialbility.
+    Threat to the vitality and resiliency of the Internet and to the online economy.
 
     Pallavi:
         a)We can assign infection rate to sub networks(The degree to which the different parts of network has been infected)
@@ -32,7 +33,10 @@
     Santiago:
     
     Owais:
-
+    • Educate end-users of the threat posed by bots and of actions end-users can take to help prevent bot infections;
+    • Detect bot activities or obtain information, including from credible third parties, on bot infections among their enduser     base;
+    • Notify end-users of suspected bot infections or help enable end-users to determine if they are potentially infected by       bots; and
+    • Provide information and resources, directly or by reference to other sources, to end-users to assist them in remediating     bot infections.
 
     Pallavi:
     a)Traditional methods:
