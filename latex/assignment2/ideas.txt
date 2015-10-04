@@ -37,6 +37,12 @@
     • Detect bot activities or obtain information, including from credible third parties, on bot infections among their enduser     base;
     • Notify end-users of suspected bot infections or help enable end-users to determine if they are potentially infected by       bots; and
     • Provide information and resources, directly or by reference to other sources, to end-users to assist them in remediating     bot infections.
+    • the ISP utilizes a “walled garden” system to quarantine or otherwise limit Internet usage for subscribers that continue      to show evidence of malicious activity. 
+    • Collaborate / share with other ISPs feedback and experience learned from the participating ISP’s Code activities.
+    • Firewall and security policy changes at the network level 
+    • Inbound and outbound email filtering 
+    • Report as Spam buttons an industry/community-wide watch, warning and incident response system
+    • Outbound Filtering / Router Level Filtering, Including Filtering of Spoofed Source Address Traffic 
 
     Pallavi:
     a)Traditional methods:
@@ -60,17 +66,57 @@
      + Affected parties (DOS spam victims)?
      
      Owais:
-     + PUBLIC SECTOR / GOVERNMENT
+     + Public Sector / Governemnt / Public Private Partnerships
      + Vendors of Operating Systems / Softwares
      + Information Security Agencies
      + Telecom Providers - offering mobile web services like WAP, Edge, 3G and 4G
      + National / International Cyber Security Alliances
+     + High Level Domain owners / Registrar 
+     +  e-Commerce, Online Banking, Auction and Payment Sites 
      
     Pallavi:
     Businesses and individuals[initially I thought we had to talk about factors which contribute to the problem but later when i read the next question, I realized that it something else]
 
 5 Identify the risk strategies that the actors can adopt to tackle the problem
     + Are there actors with different strategies? why?
+    
+    Owais:
+    Vendors of OS / Softwares
+    + Malicious Software Removal Tools (free / builtin)
+    + Stronger Antivirus / Malware remediation tools and features
+    + Cheaper and Open Source Alternatives to Pirated Software 
+    + Free/Libre and Open Source Software
+    
+    Government / Intelligence Agencies
+    + Ban Badware websites
+    + Effective Antispam and Cybercrime Laws and Regulation
+    + Dedicated laws on cybercrime
+    + Adapted to the paperless and cross-border nature of Internet crime
+    + Cross border jurisdiction established using a “country link” concept 
+    + Capacity Building among relevant policy stakeholders 
+    + Framework for local enforcement of Cybercrime and Botnet Mitigation 
+    + Development of watch, warning and incident response centres
+    + Broad based education initiatives on Internet safety and security 
+    + Facilitation of secure ICT access for users 
+    + Capacity Building for Policy Stakeholders 
+    + Framework for Efficient Cross Border Enforcement in Cybercrime Prosecutions
+    + Automated Detection and Reporting of Botnet Hosts 
+    + Network Telescopes - Darknets and Flow Based Analysis 
+    + Collection and Analysis of Anonymized Server Log Files from Participating ISPs 
+    
+    High Level Domain owners / Registrar
+    + Detection and takedown of malware or botnet domains
+    + Phish tracking and repository sites such as Netcraft and Phishtank
+   + Trusted block lists such as Spamhaus and CBL 
+    + Identification of IP Space Controlled by an ISP: Whois and Rwhois Records 
+    + Real Time Feeds of DNS Block Lists that Target Malware Activity 
+    + Fast Flux Hosting and Rock Phishing
+    + Whois Privacy and Domain Takedowns 
+    
+    Others
+    Capacity building for e-commerce and online transaction providers 
+    Network Telescopes - Darknets and Flow Based Analysis 
+    
     Pallavi:
         Yes,these actors have different strategies.
         Businesses:
