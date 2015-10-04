@@ -16,6 +16,8 @@
     Network owner infection rate
     
     Owais:
+    Ability to respond proactively to prevent, detect, notify, remediate and recover from incidents casued by botnet infections
+    Help clients to be aware of compromised machines and disinfect their systems.
     Detection of botnet infrastructure operating within the cutomer base.
     Effort needed to optimise the networks load balancing capabilities to ensure avaialbility.
 
@@ -28,6 +30,9 @@
 3 What risk strategies can the problem owner follow to reduce the security issue as measured in your first assignment?
 
     Santiago:
+    
+    Owais:
+
 
     Pallavi:
     a)Traditional methods:
