@@ -16,7 +16,8 @@
     Network owner infection rate
     
     Owais:
-    
+    Detection of botnet infrastructure operating within the cutomer base.
+    Effort needed to optimise the networks load balancing capabilities to ensure avaialbility.
 
     Pallavi:
         a)We can assign infection rate to sub networks(The degree to which the different parts of network has been infected)
