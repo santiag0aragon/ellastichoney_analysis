@@ -1,45 +1,88 @@
+1.	What risk strategies can the problem owner follow to reduce the security issue as measured in your first assignment?
 %!TEX root = main.tex
 
 % What risk strategies can the problem owner follow to reduce the security issue as measured in your first assignment?
+
+\paragraph{To have the connection between Command & Control server and its bots disconnected}
+
+ISPs should make sure that bots in the local network will not be able to contact the original C\&C server.
+
+This can be done by intervening the addressing which usually take place in two steps.
+
+In the first step, a site administrator can control the local DNS resolver(which handles the DNS requests forwards the request to an authoritative DNS server) and instruct to return a specially crafted response to specific queries. In the next step, local routers can be equipped with routing table entries to sinkhole certain addresses or redirect them to different hosts~\cite{leder2009proactive}.
+
+
+\paragraph{To have effective countermeasures(to fight botnets) on the infrastructure level}
+
+ISPs should make use of the knowledge of the protocol which can be used to attack the command layer of a botnet .
+
+An easy example would be an IRC-based network where a command like remove can instruct bots to uninstall themselves from infected systems. ~\cite{leder2009proactive}.
+
+
+\paragraph{To take the botnet down using the inherent flaws in botnet}
+
+ISPs can make use of presence of bugs and programming flaws in bots that result in vulnerabilities which can be exploited to gain control either over a central component or over infected machines. This is aid in bringing the botnet down. An examples of such vulnerabilities would be security holes in software or remotely-exploitable buffer overflows~\cite{leder2009proactive}.
+
 In this section we describe possible risk strategies that the ISP can follow in order to reduce the security impact of botnet evolution.
 \paragraph{To work with Industry and other stakeholders on developing a policy to implement}
 
 
-\paragraph{Defense against attack by Bot}
-Security must be built-in during each phase of the system development and this can be done by using Intrusion Prevention System (IPS), Transport Layer Security (TLS)/Secure Sockets Layer (SSL) protocol and Correct coding of Web service/applications (without security flaws which makes it resistant to threats)~\cite{stankovic2009defense}.
+\paragraph{To build an anti-bot friendly network}
+
+Security can be built-in during each phase of the system development and this can be done by using Intrusion Prevention System (IPS), Transport Layer Security (TLS)/Secure Sockets Layer (SSL) protocol and Correct coding of Web service/applications (without security flaws which makes it resistant to threats)~\cite{stankovic2009defense}.
 
 
-\paragraph{Monitoring, detection and studying of Bot}
+\paragraph{To learn from the activities of the bot to predict its actions}
 All users of computers and the system administrators should detect presence and/or activities of Botnet and prevent it from influencing upon the computers by constant following of the activities on the computers such as monitoring log files, detecting threats and finding counter measures~\cite{stankovic2009defense}.
 
 \begin{itemize}
-    \item a registration component
-    \item an awareness-raising component
-    \item guidance on network management
-    \item high-level advice on how to respond to threats
-    \item a reporting component
+	\item a registration component
+	\item an awareness-raising component
+	\item guidance on network management
+	\item high-level advice on how to respond to threats
+	\item a reporting component
 \end{itemize}
 
 Attempting to instruct users about how to shield themselves from installing malware and inadvertently transforming their PCs into bots is a key component to raise the level of security awareness~\cite{stankovic2009defense}.
 
 
-\paragraph{To develop legislative punisment policy}
+\paragraph{To develop legislative punishment policy}
+
 ISPs are in a better position to understand the issues associated with botnets and can act on the botnet threat. They stand a better chance at formulating the solution (legislative measures) along with legislative-punishment body to prevent the attackers from trying to carry the attacks~\cite{stankovic2009defense}.
 
 
 Policy makers and ISPs must consider how best to implement authentication mechanisms that encourage reliable communications between ISPs, consumers and other actors.
-\paragraph{The Addressing Layer}
-This involves strategies targeting the routing and the addressing layer of a botnet infrastructure. Bots in the local network cannot contact the original C\&C server when intervened in addressing which usually take place in two steps.
 
 
-In the first step, a site administrator can control the local DNS resolver(which handles the DNS requests forwards the request to an authoritative DNS server) and instruct to return a specially crafted response to specific queries. In the next step, local routers can be equipped with routing table entries to sinkhole certain addresses or redirect them to different hosts~\cite{leder2009proactive}.
+%I THINK THAT THIS IS RELEVANT. I found this online and I had included this last time. It is your call :)
 
 
-\paragraph{The Command Layer}
-This involves attacking the command layer of a botnet with the knowledge of the protocol used. An easy example would be an IRC-based network where a command like remove can instruct bots to uninstall themselves from infected systems~\cite{leder2009proactive}.
+\paragraph{Promote public participation}
+When voluntary codes of practice are received to battle botnets, ISPs must be urged to openly advance their cooperation in the project. They must likewise be urged to show how they are accomplishing consistence with the code~\cite{OECD}.
 
 
-\paragraph{Exploitation}
-Exploit based strategies make use of presence of bugs and programming flaws in bots that result in vulnerabilities which can be exploited to gain control either over a central component or over infected machines. An examples of such vulnerabilities would be security holes in software or remotely-exploitable buffer overflows~\cite{leder2009proactive}.
+\paragraph{Privacy protections should be included in policies for botnet responses}
+The measures taken to fight botnet might possibly affect a person’s privacy, contingent upon the appropriate lawful structure and variables, for example, how contaminated machines are recognized. These dangers can be diminished through the privacy-sensitive design of systems and hierarchical procedures and in addition appropriate supervision~\cite{OECD}.
 
 
+\paragraph{Devise mechanisms for reliable and verifiable communications during notification}
+Policy makers and ISPs must consider how best to implement authentication mechanisms that encourage reliable communications between ISPs, consumers and other actors~\cite{OECD}. 
+
+\paragraph{Consider multi-channel notification method}
+ISPs should consider to depend on various channels of correspondence to inform users about the vicinity of bots~\cite{OECD}.
+
+\paragraph{Design policies using effective metrics}
+The consolidation of good measurements into frameworks and empowering the reporting of measures to pertinent powers would be a helpful step. Metrics must be universally practically identical to assist members with recognizing best practices across borders and urge different nations to advance such activities~\cite{OECD}.
+
+\paragraph{Measures for prevention should be taken}
+Attempting to instruct users about how to shield themselves from installing malware and inadvertently transforming their PCs into bots is a key component to raise the level of security awareness~\cite{OECD}.
+
+\paragraph{Go for worldwide interoperability}
+Worldwide co-operation amongst national governments, specialized bodies and authoritative foundations is significant if the botnet danger is to be foiled~\cite{OECD}.
+
+\paragraph{Financial help for policy development to implement}
+Government offices must contribute both towards start up and introductory operational expenses wherever conceivable and work with ISPs to discover reasonable methods for covering the long term operational expenses~\cite{OECD}.
+
+
+% 
+OECD (2012), “Proactive Policy Measures by Internet Service Providers against Botnets”, OECD Digital Economy Papers, No. 199, OECD Publishing
