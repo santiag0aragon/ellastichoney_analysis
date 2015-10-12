@@ -3,3 +3,25 @@
 % 6 Pick one of the risk strategies identified previously and calculate the Return on Security Investment (ROSI) for that particular strategy. I.e.,
 %     + Estimate the costs involved in following that strategy
 %     + Estimate the benefits of following that strategy (assume a particular loss distribution)
+In this section we detail one of the risk strategies proposed in~\ref{cap:sec3}, an hypothetical Chinese ISP X who owns 15\% of China's Internet users~\cite{china_i_users}, namely X has 97 million users. Lately their security team has realized that the botnet infection rates are growing within their network, and since they can not transfer the risk to the subscribers because the Chinese is a very competitive market, they decide to absorb the cost of enhancing the subscriber's security protection and increase subscriber awareness.
+
+The fist step is to calculate the cost of a security awareness campaign cost on average around \$0.80 per user per year~\cite{report}, thus the amount invested is \$77.6 millions per year.
+In second place, X would like to provide technical support to setup in a proper way the security configurations and to validate that their systems are up-to-date for each subscriber. According to~\cite{pay} the average cost per hour of a technician is \$15. If the average time a technician spends in at a subscribers location is 1 hour twice a year, X needs to invest 3 billion for the second mechanism.
+
+To estimate the benefits of following this strategy we use the return on security investment (ROSI). The ROSI is defined as follows:
+\[ROSI = \frac{ALE -mALE -CoS}{CoS}\]
+where $ALE$ is the Annual loss expectancy defined as \[ALE=ARO*SLE\] $mALE$ is the modified $ALE$ after applying the risk strategy and $ARO$ is the Annual Rate of Occurrence and measures the probability that a risk occurs in the year, and $SLE$ is the Single Loss Expectancy that represents the amount of money that a risk occurs~\cite{ROSI}.
+
+The $SLE$ is calculated as follows, the average bandwidth used by botnets is 14,181,240 GB for DDOS and spam~\cite{spam,ddos}, attacks per year, the cost per GB for a ISP is \$0.034~\cite{gb_cost}, thus the average cost for botnet bandwidth misuse is the $SLE=$\$482,158
+
+We define two scenarios, the first one X only applies the user awareness campaign, in the second one, the ISP applies technical support approach. The $CoS_1 =\$ 97,000,000$ and the $CoS_2=\$3,000,000,000$
+
+Even when the impact of a user awareness campaign is hard to measure, in~\cite{uaw} mention that might help to reduce at least 10\% of the incidents, thus we assume that $ARO_1 - mARO_1=90\%$. For the second scenario we can assume a higher impact since the risk reduction is in hands of the technicians and not in the subscribers hand, i.e. $ARO_1 - mARO_1=30\%$.
+
+Therefore the ROSI calculation is the following:
+\[ROSI_1=\frac{(0.9)*482,158 -77,600,000}{ 77,600,000}=-99\%\]
+\[ROSI_2=\frac{(0.9)*482,158 -3,000,000,000}{3,000,000,000}=-99\%\]
+
+As we can see both strategies are not convenient to the ISP X since the cost of applying any of them is higher than the economic harm that the botnet could perform. However, in this calculation the economic harm performed to the botnet attacks, i.e. DDOS or spam victims, are not taken into account and this economic impact is normally higher than the cost of applying such policies. In this case to be able to transfer the risk from the victims to the ISPs the regulator entity should enforce policies that persuade the ISP to implement stronger security countermeasures against botnet infection.
+
+
