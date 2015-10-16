@@ -1,0 +1,13 @@
+In the previous assignment we have analyzed the variance in security performance in relation to a metric and how different risk strategies can shape this variability. This assignment aims at understanding the factors influencing this variance, i.e., instead of analyzing what the differences among different actors are we will investigate the underlying reasons behind the existence of these.
+
+Actors involved in the security issue follow different strategies to mitigate its impact. For this assignment:
+
+    1 Select 3 actors (including the problem owner) involved in the security issue (you can draw on the previous assignment). For each one:
+        a Identify one concrete countermeasure that they could take to mitigate the security issue,
+        b Analyze the distribution of costs and benefits among the different actors that the deployment of  the countermeasure would entail,
+        c Analyze whether the actors have an incentive to take the countermeasure,
+        d Briefly reflect on the role of externalities around this security issue.
+    2 Identify the type of actor whose security performance is visible in the metric(s)  you selected (e.g. ISPs, software vendors, countries). Note that this is not necessarily the problem owner, rather is the unit of analysis in your metric.
+        a Identify different factors explaining (causing) the variance in the metric,
+        b Collect data for one or several of  these factors,
+        c Perform a statistical analysis to explore the impact of these factors on the metric.
