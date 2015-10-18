@@ -1,75 +1,20 @@
-% What risk strategies can the problem owner follow to reduce the security issue as measured in your first assignment?
-%!TEX root = main.tex
-\label{cap:sec3}
-As we define in section~\ref{cap:sec1} the security issue that we analyze in this work is botnet infection and we call the ISPs the owners of this problem.
-They are interested to avoid their resources, i.e. bandwidth, to be misused, since bandwidth efficiency is a key resource in their business model. Thus,  to mitigate the risk of having propagation of botnets inside their network they need to either be able to stop the propagation with in their infrastructure or work with their subscribers to reduce subscribers risk to become a bot.
+ISPs:
 
-The former strategy can be described as a risk avoidance strategy since, the problem owner should invest in security solutions to detect, filter and block malicious traffic, i.e., firewall and security policy changes at the network level, “walled garden” system to quarantine or to limit Internet usage for subscribers that continue to show evidence of malicious activity. % TODO elaborate
+When ISPs cleans up botnet malware from the network, users’ demand for network access and thus ISP’s profits can increase because of the elimination of negative factors. However, ISPs have limited incentives to invest in botnet mitigation. At the same time, if the clean-up cost per user largely raises the access fee, the demand and ISP’s profits can also decrease. 
 
-The latter strategy could be implemented by a either by risk transfer or by a risk avoidance approach. The risk transfer strategy could be implemented by issuing a charge the subscriber if he is part of a botnet. Since we can assume that the subscriber is not willing to pay extra fees to the ISP, he is indirectly encourage to enhance his equipment's security, i.e. subscriber awareness will grow and updates and patches will be applied when its required. By applying this strategy the ISP is transferring the risk and therefore the cost of taking countermeasures to the subscriber.
+The revenue of ISPs are not (directly) affected by the botnets and ISPs would probably welcome some external funding in the efforts to fight botnets. In this direction, a government-sponsored program would be of great help to ISPs[example: Australia and Germany]. In the case governments are unwilling to fund these initiatives, ISPs need to find a way to make them, at the very least, cost neutral if not cost positive. 
 
-The implementation of the latter strategy could also be implemented by taking a risk avoidance approach. If the ISP is willing to absorb all the cost of enhancing the subscriber's security protection and increasing subscriber awareness, i.e., launching a  subscriber awareness campaigns and by assuring that the subscribers have the proper security setup and software updates. The software security enhancement could be done by sending a technician to a subscriber location to properly setup their equipment.
+Considering the increasing trend of botnet ad-fraud attacks and the consequently increasing loss of ad revenue for ad networks, Ad Networks have economic incentives to fight botnets. However, Ad Networks are not in the best position to thwart botnets themselves and thus ANs might be willing to subsidize the ISPs to achieve that goal. Such cooperation would help ISPs deploy detection and remediation mechanisms and would of help in fighting botnets. 
 
+if liability for violations of cyber security is imposed on ISP, it may overreact. Because detecting and cleaning up botnet malware in users’ computers are costly, ISP may rather choose to disconnect users whose computers are vulnerable to malware infection.
 
-% Botnets seek  secrets,  technology, and ideas which are priceless. They cause damage to critical infrastructure and economy of ISPs. They  pose real risks to the economic security and privacy of the subscribers(Served by ISPs). Botmasters distribute malicious software that can turn a computer into a “bot.” When this occurs, a computer can perform automated tasks over the Internet, without any direction from its actual subscriber. A network of these infected computers—numbering in the hundreds of thousands or even millions becomes connected to a command-and-control server operated by the botmaster. Botnet can be used in distributed denial of service (DDoS) attacks, proxy and spam services, malware distribution, and other organized criminal activity. They can be used to attack Internet-connected critical infrastructure.
+Cloud Service Providers:
 
+The customers pay for the cloud services, there is(legal) objections to any attack(botnet) on their data and the price of Cloud services would continue to drop if bot activities on the Cloud affect users. Cloud service providers are legally  bound to protect legitimate users of Cloud services from botnet infection. Cloud Service Providers have economic incentives to fight botnets.
 
-% ISP's goal is to remove, reduce, and prevent the botnet activities by attacking the threat through the identification of existence of botnet  master and bots. It would then be followed by an approach to disrupt and dismantle the most significant botnets threatening them. In this direction, ISPs can address the problem by following few steps as mentioned below.
+End Users:
 
+Home users are well aware of the consequences of botnet infection due to their valuable data, money and productivity at stake, and some of them join arms in fighting botnets. It might also be that unlike ISP, these home users can directly enjoy the incentives of having protected machines. On the other hand, it is about security versus availability, speed, or usability in their business and finally, the monetary benefits of security measures not being very explicit might not motivate all the users to do the same.
 
-% \paragraph{ To have the connection between Command & Control server and its bots disconnected}
-
-% ISPs should make sure that bots in the local network will not be able to contact the original C\&C server.
-
-% This can be done by intervening the addressing which usually take place in two steps.
-
-% In the first step, a site administrator can control the local DNS resolver(which handles the DNS requests forwards the request to an authoritative DNS server) and instruct to return a specially crafted response to specific queries. In the next step, local routers can be equipped with routing table entries to sinkhole certain addresses or redirect them to different hosts~\cite{leder2009proactive}.
-
-
-% \paragraph{To have effective countermeasures(to fight botnets) on the infrastructure level}
-
-% ISPs should make use of the knowledge of the protocol which can be used to attack the command layer of a botnet .
-
-%  An easy example would be an IRC-based network where a command like remove can instruct bots to uninstall themselves from infected systems. ~\cite{leder2009proactive}.
-
-
-% \paragraph{To take the botnet down using already present flaws in it}
-
-% ISPs can make use of presence of bugs and programming flaws in bots that result in vulnerabilities which can be exploited to gain control either over a central component or over infected machines. This is aid in bringing the botnet down. An examples of such vulnerabilities would be security holes in software or remotely-exploitable buffer overflows~\cite{leder2009proactive}.
-
-% ISPs in alliance with its government partners, international partners, and private sector stakeholders can work collaboratively in developing a multi-pronged effort aimed at defeating the botnets. In this section we describe possible risk strategies that the ISP can follow in order to reduce the security impact of botnet evolution.
-
-% \paragraph{To work with Industry and other stakeholders on developing a policy to implement}
-
-
-% \paragraph{To build an anti-bot friendly network}
-
-% Security can be built-in during each phase of the system development and this can be done by using Intrusion Prevention System (IPS), Transport Layer Security (TLS)/Secure Sockets Layer (SSL) protocol and Correct coding of Web service/applications (without security flaws which makes it resistant to threats)~\cite{stankovic2009defense}.
-
-
-% \paragraph{To learn the activities of the bot to predict its actions}
-% All subscribers of computers and the system administrators should detect presence and/or activities of Botnet and prevent it from influencing upon the computers by constant following of the activities on the computers such as monitoring log files, detecting threats and finding counter measures~\cite{stankovic2009defense}.
-
-% \begin{itemize}
-%     \item a registration component
-%     \item an awareness-raising component
-%     \item guidance on network management
-%     \item high-level advice on how to respond to threats
-%     \item a reporting component
-% \end{itemize}
-
-% Attempting to instruct subscribers about how to shield themselves from installing malware and inadvertently transforming their PCs into bots is a key component to raise the level of security awareness~\cite{stankovic2009defense}.
-
-
-% \paragraph{To develop legislative punishment policy}
-
-% ISPs are in a better position to understand the issues associated with botnets and can act on the botnet threat. They stand a better chance at formulating the solution (legislative measures) along with legislative-punishment body to prevent the attackers from trying to carry the attacks~\cite{stankovic2009defense}.
-
-
-% Policy makers and ISPs must consider how best to implement authentication mechanisms that encourage reliable communications between ISPs, consumers and other actors.
-
-% Conclusion:
-
-% These risk strategies would degrade or disrupt botnet's ability to perform its functions by deploying a technical solution to interrupt the botnet. By working with private sector partners to update security software that detects and damages the bot’s malware would make sure that botnet master would have to invest more resources in terms of money, coding and time by causing wasted time debugging failures. The legislative punishment policy would make the botmaster aware of the consequences of his cyber criminal activity by causing concern about potential or actual law enforcement action.
-
+Mid and small sized businesses relying on online services suffer as they lack necessary resources to offer safe financial transactions for their customers and their bigger concern would be about their turnover and staying competitive, rather than investing on botnet mitigation.
 
