@@ -7,6 +7,7 @@ Actors involved in the security issue follow different strategies to mitigate it
         b Analyze the distribution of costs and benefits among the different actors that the deployment of  the countermeasure would entail,
         c Analyze whether the actors have an incentive to take the countermeasure,
         d Briefly reflect on the role of externalities around this security issue.
+
     2 Identify the type of actor whose security performance is visible in the metric(s)  you selected (e.g. ISPs, software vendors, countries). Note that this is not necessarily the problem owner, rather is the unit of analysis in your metric.
         a Identify different factors explaining (causing) the variance in the metric,
         b Collect data for one or several of  these factors,
