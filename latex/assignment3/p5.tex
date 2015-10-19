@@ -1,7 +1,29 @@
-Vendors of operating systems should provide tools that provide on-demand and real-time scanning of systems to help remove viruses, spyware, and other malicious software. These valuable applications should be bundled with the operating systems as part of the effort to mitigate the risks from botnet infection attempts. They cannot be a complete replacement to antivirus and antispyware applications used that scan and monitor known viruses and spyware, however they can be a vital resource to provide ongoing protection from a trusted source. An effective and up-to-date software firewall at the OS level can be an effective protection barrier between the users system and the Internet. OS Vendors should provide a sandbox environment to run unverified programs that may contain malicious code downloaded from unverified solution providers, untrusted users and untrusted websites. Software providers that provide email, social networking and instant messaging facilities should enforce strong filtering of content and attachments to mitigate the risk of botnet infections delivering malware that are presumed to be pictures or movies by the end users. Users should be limited to restricted access to applications and OS features, unless all security settings are hardened and the systems are patched with the most current updates.	
+%!TEX root = main.tex
+% a Identify different factors explaining (causing) the variance in the metric,
 
-To establish every network connection to a particular host, computers have to preform DNS lookup. Domain registrars can use methods such as packet filtering to filter traffic towards banned IPs by blocking access to certain servers from a list of banned or suspected bad domains. Attackers abuse the DNS system to avoid detection by using devious tricks such as fast-flux. In the fast-flux technique, bots continuously register and deregister their IP addresses for a particular domain. Each request by a user to access a malicious site will result in accessing a different bot and possibly different ISP. The only option to combat fast-flux is for the registrar to suspend the bad domain, which has its own positive and negative incentives in doing so. Another proactive approach that registrars can adopt is automated abuse handling and actively responding to external domain suspension requests from financial service providers and other authentic sources of information like intelligence agencies and ISPs.
 
-Most major vendors like Microsoft are providing free tools to remediate the effects of botnet infections, and help users to combat against cyber criminals for their online privacy and security. However, there is a need for more user awareness for better protection and prevention from botnet infections. Once notified by ISPs about infected machines, user must take remedial actions to remove malicious software from their systems. Even when the related malware have been removed, users must take actions and steps to fully recover the systems to a stable state. Remediation is a critical step to curb the impact of bots, though it is recognized that without tools and processes to harden the devices and prevent reinfection, bot infections will repeatedly reoccur.
 
-With ever growing incentives and motives behind spreading infections to run large networks of distributed botnets, the techniques and technologies are changing rapidly with time. Vendors of security services such as antivirus solution providers should put more effort on research and develop solutions to detect, prevent and mitigate the impact of botnet infections. Although the existing practices, tools and techniques to mitigate botnet infections are being tackled to a greater extent compared to the past, however attackers are coming up with clever new ways of exploiting vulnerabilities to spread their networks via botnet infections. Many infections are quite hard to remove, as they may disable windows update, as well as block access to the websites and update servers of antivirus and security software vendors. 
+We recall from our previous work the definition of the metric used to quantify botnet infection (BNI) problem, namely \textit{BNI attempts} which measures the number of attacks executed daily. In figure ~\ref{fig:isp_legend_area}, we show the output of this metric for different Autonomous Systems (AS) ran by ISPs. It is normalized by the address space of each AS, however, in order to explain the variation between AS\/ISP's in this section we identify, analyze and statistically describe the factors behind the variance of the metric defined before.
+
+\subsection{Identifying the underlying factors}
+To successfully identify the factors behind the BNI attempts variance first we would like to give an intuition of how does this security issue propagates within a network. A botnet is more likely to try more infection attempts if a it is either active, big or both. The likelihood infection of a potential zombie machine is mainly influenced by the following two factors: how close the potential new member is (w.r.t. euclidean or geodesic~\cite{geodesic} distance) and how secure is the his system.
+The former factor, the distance between a zombie machine and a potential new member of the botnet might be represented by the geographic distance or the logical distance within a network topology, i.e. the type of network in which the zombie machine is connected (Wifi public hot-spot, home network, enterprise network), the Internet penetration in the country or region (High Internet penetration rate may lead to club effect behaviors~\cite{club_effects}).
+
+The latter factor, the security of the potential zombie machine might depends on different software and hardware variables, i.e. operative system (OS), software updates (known vulnerabilities for a particular version), hardware reliability (backdoor presence), user awareness.
+%TODO normalize data by address space
+
+\begin{figure}[h]
+     \caption{Infection attempts per day in different AS of the ISPs normalized by address space and multiplied by $10^9$}
+     \label{fig:isp_legend_area}
+    \centering
+    \includegraphics[width=\linewidth]{images/isp_legend_area_norm}
+\end{figure}
+
+\subsection{Statistical analysis of the underlying factors}
+\begin{figure}[h]
+     \caption{Infection attempts per day in different AS of the ISPs normalized by address space and multiplied by $10^9$}
+     \label{fig:isp_legend_area}
+    \centering
+    \includegraphics[width=\linewidth]{images/os_isp}
+\end{figure}
+% section explaining_the_variance_in_botnet_infection_ (end)
